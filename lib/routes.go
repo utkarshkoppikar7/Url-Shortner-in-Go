@@ -87,3 +87,10 @@ func GetLongUrl(c *gin.Context) {
 
 	c.Redirect(http.StatusFound, longUrl)
 }
+
+
+func Hello(c *gin.Context) {
+	c.JSON(200, gin.H{
+		"response":  "Hello Welcome to URL Shortner"
+	})
+}

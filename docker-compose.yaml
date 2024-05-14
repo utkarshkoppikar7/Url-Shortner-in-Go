@@ -14,7 +14,7 @@ services:
     container_name: url_shortner_redis
   app:
     build:
-      context: .. # Use an image built from the specified dockerfile in the current directory.
+      context: . # Use an image built from the specified dockerfile in the current directory.
       dockerfile: Dockerfile
     depends_on:
       - redis

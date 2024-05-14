@@ -12,7 +12,7 @@ RUN go mod download
 
 # Copy the entire source code from the current directory to the
 # working directory inside the container
-COPY .. .
+COPY ../.. .
 
 # Build the Go application
 RUN CGO_ENABLED=0 GOOS=linux go build -o app .

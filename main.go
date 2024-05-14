@@ -17,6 +17,8 @@ func main() {
 
 	router.GET("/url", lib.GetLongUrl)
 
+	router.GET("/", lib.Hello)
+
 	// Run the server on port GO_PORT
 	err1 := router.Run(":" + goPort)
 	if err1 != nil {
